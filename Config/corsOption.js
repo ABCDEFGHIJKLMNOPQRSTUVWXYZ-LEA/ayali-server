@@ -1,6 +1,7 @@
 const allowedOrigins = [
 'http://localhost:3000',
 'http://localhost:5500',
+'https://admirable-wisp-6090cc.netlify.app',
 process.env.FRONTEND_URL
 ]
 const corsOptions = {
