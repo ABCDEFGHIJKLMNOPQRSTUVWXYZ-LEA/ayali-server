@@ -1,24 +1,24 @@
 const User = require("../models/User")
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-// const userName1="אילי"
-// const userName2="רבקה"
-// const password1="12345Ss!"
-// const password2 = "54321Ss!"
-// const u3 = async()=>{
-//     const userPassword1 = await bcrypt.hash(password1,10)
-// const userPassword2 = await bcrypt.hash(password2,10)
+const userName1="אילי"
+const userName2="רבקה"
+const password1="12345Ss!"
+const password2 = "54321Ss!"
+const u3 = async()=>{
+    const userPassword1 = await bcrypt.hash(password1,10)
+const userPassword2 = await bcrypt.hash(password2,10)
 
-// const u=await User.create({
-//       userName:userName1,
-//       userPassword:userPassword1
-//     })
-//      const u2=await User.create({
-//       userName:userName2,
-//       userPassword:userPassword2
-//     })
-// }
-//     u3()
+const u=await User.create({
+      userName:userName1,
+      userPassword:userPassword1
+    })
+     const u2=await User.create({
+      userName:userName2,
+      userPassword:userPassword2
+    })
+}
+    u3()
 const login = async (req, res) => {
     const { userName, userPassword } = req.body
     if (!userName || !userPassword) {
